@@ -4,13 +4,22 @@
 This Repository contains the information necessary to spoof the AMD Radeon RX 5700 XT Navi 10 GPU to the AMD Radeon Pro W5700X GPU via adding in some XML property list formatted keys and strings in efforts of mitigating unwanted behaviors and performance degradation in macOS.
 I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can confirm that it works in both macOS Big Sur 11.6.5, and in macOS Monterey 12.3.
 
+## DISCLAIMER:
+
+- I am not responsible for any damages that may or may not occur to your GPU or any hardware otherwise arising from your having chosen to do the steps outlined in this GitHub repository, as this is just merely for the sake of experimentation.
+
+## UPDATE:
+
+- As of 12.4 the graphical issues that were introduced by Apple (or whomever for that matter have been resolved it seems, negating the absolute NEED for this, although it can still be ran.
+- I am not suggesting that anyone do this, just know that it's still possible to continue to do so.
+- One can technically add only the lines 
+
 
 ## Acknowledgements
 
- - [Feartech, for the original post](https://www.tonymacx86.com/members/feartech.877703/)
- - [aldaro, aka aldaro#0355 on Discord, for informing me about this.]()
+ - [Feartech, for the original post found on TMX86.](https://www.tonymacx86.com/members/feartech.877703/)
+ - [aldaro, aka aldaro#0355 on Discord, for having informed me about this.]()
  - [Everyone who cares, for being awesome.](https://www.youtube.com/watch?v=daBrCsDOOtk)
-
 
 ## Usage/Examples
 
@@ -122,12 +131,12 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 
 ## Documentation
 
-### In order to fully utilize this method, we're going to need to apply this to the appropriate section of our config.plist, under DeviceProperties, and then subsequently whatever path it is that your GPU is (this can be found by looking up such in IORegistryExplorer, or gfxutil).
+### In order to fully utilize this method, we're going to need to apply the section of code above to the appropriate section of our config.plist which in this case will be the appropriate DeviceProperties path that is related to your GPU. (This can be found by looking up such in IORegistryExplorer, or gfxutil).
 
-Upon adding everything, make sure that you place the code in appropriately, IE: making accomodations or necessary changes at the end of the code by the Delete key to make sure that everything goes into your config.plist correctly.
+- Upon adding everything, make sure that you place the code in appropriately, IE: making accomodations or necessary changes at the end of the code by the Delete key to make sure that everything goes into your config.plist correctly.
 
-Upon restarting your machine, you should now see in all locations referencing the GPU that it has been spoofed correctly as a Radeon Pro W5700X 8GB.
+- Upon restarting your machine, you should now see in all locations referencing the GPU that it has been spoofed correctly as a Radeon Pro W5700X 8GB.
 
-I've personally found that this has alleviated a lot of the issues I was facing, especially quite a few dealing with Electron.js based applications that would on occasion cause my machine to at random grind to a halt. There has been reports that it has fixed various other GPU related slowdowns as well.
+## NOTE: 
 
-I hope that you find this as useful as I have, and I will update this guide accordingly to explain things further in depth as time goes on and permits.
+- It has been reported to me by someone that this made their fans stay spinning which is not technically the default behavior for these cards in macOS due to the nature of how macOS handles dGPUs and at which temperatures they decide to make fans kick in. I do not see any detriment to this on my end, however yet again YMMV and you do so at your own risk.
