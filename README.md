@@ -12,8 +12,12 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 
 - As of 12.4 the graphical issues that were introduced by Apple (or whomever for that matter have been resolved it seems, negating the absolute NEED for this, although it can still be ran.
 - I am not suggesting that anyone do this, just know that it's still possible to continue to do so.
-- One can technically add only the lines 
+- One can technically omit everything after the 
 
+``` <key>@3,name</key>
+    <string>ATY,Adder</string>
+```
+and still work, but ymmv!
 
 ## Acknowledgements
 
