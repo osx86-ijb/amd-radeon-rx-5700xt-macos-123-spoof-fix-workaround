@@ -127,8 +127,8 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 ```
 - One can technically omit everything in the code above that's below the two lines stated here and it still work, but ymmv:
 
-``<key>@3,name</key>``
-``<string>ATY,Adder</string>``
+``<key>@3,name</key>``  
+``<string>ATY,Adder</string>``  
 
 ## Documentation
 
