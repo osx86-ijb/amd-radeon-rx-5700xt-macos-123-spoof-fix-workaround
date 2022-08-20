@@ -130,12 +130,11 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
                 <string>ATY_GPU</string>
             </dict>
         </dict>
-        <key>Delete</key>
-        <dict/>
     </dict>
-```
-- One can technically omit everything in the code above that comes after / below the lines stated here and it still work, but ymmv:
-
+```  
+  
+- One can technically omit everything occuring after the last instance of `<string>ATY,Adder</string>` as shown belowand it still work, but ymmv and don't forget / remember to add the appropriate closing dictionary entries:
+  
 ```<key>DeviceProperties</key>
     <dict>
         <key>Add</key>
@@ -150,8 +149,11 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
                 <string>ATY,Adder</string>
                 <key>@3,name</key>
                 <string>ATY,Adder</string>
-```  
-
+            </dict>
+        </dict>
+    </dict>
+```   
+  
 ## Documentation
 
 ### In order to fully utilize this method, we're going to need to apply the section of code above to the appropriate section of our config.plist which in this case will be the appropriate DeviceProperties path that is related to your GPU. (This can be found by looking up such in IORegistryExplorer, or gfxutil).
