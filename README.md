@@ -1,4 +1,4 @@
-
+<p align="center">  
 # Spoofing the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 
 This Repository contains the information necessary to spoof the  
@@ -163,4 +163,5 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 
 ## NOTE: 
 
-- It has been reported to me by someone that this made their fans stay spinning which is not technically the default behavior for these cards in macOS due to the nature of how macOS handles dGPUs and at which temperatures they decide to make fans kick in. I do not see any detriment to this on my end, however yet again YMMV and you do so at your own risk.
+- It has been reported to me by someone that this made their fans stay spinning which is not technically the default behavior for these cards in macOS due to the nature of how macOS handles dGPUs and at which temperatures they decide to make fans kick in. I do not see any detriment to this on my end, however yet again YMMV and you do so at your own risk.  
+</p>
