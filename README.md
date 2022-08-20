@@ -125,10 +125,23 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
         <dict/>
     </dict>
 ```
-- One can technically omit everything in the code above that's below the two lines stated here and it still work, but ymmv:
+- One can technically omit everything in the code above that comes after / below the lines stated here and it still work, but ymmv:
 
-``<key>@3,name</key>``  
-``<string>ATY,Adder</string>``  
+```<key>DeviceProperties</key>
+    <dict>
+        <key>Add</key>
+        <dict>
+            <key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+            <dict>
+                <key>@0,name</key>
+                <string>ATY,Adder</string>
+                <key>@1,name</key>
+                <string>ATY,Adder</string>
+                <key>@2,name</key>
+                <string>ATY,Adder</string>
+                <key>@3,name</key>
+                <string>ATY,Adder</string>
+```  
 
 ## Documentation
 
