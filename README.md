@@ -14,10 +14,9 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 - I am not suggesting that anyone do this, just know that it's still possible to continue to do so.
 - One can technically omit everything after the 
 
-``` <key>@3,name</key>
-    <string>ATY,Adder</string>
-```
-and still work, but ymmv!
+``<key>@3,name</key>``
+``<string>ATY,Adder</string>``
+    and it still work, but ymmv!
 
 ## Acknowledgements
 
