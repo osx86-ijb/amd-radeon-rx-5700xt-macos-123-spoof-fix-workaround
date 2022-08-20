@@ -4,6 +4,12 @@
 This Repository contains the information necessary to spoof the AMD Radeon RX 5700 XT Navi 10 GPU to the AMD Radeon Pro W5700X GPU via adding in some XML property list formatted keys and strings in efforts of mitigating unwanted behaviors and performance degradation in macOS.
 I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can confirm that it works in both macOS Big Sur 11.6.5, and in macOS Monterey 12.3.
 
+## Acknowledgements
+
+ - [Feartech, for the original post found on TMX86.](https://www.tonymacx86.com/members/feartech.877703/)
+ - [aldaro, aka aldaro#0355 on Discord, for having informed me about this.]()
+ - [Everyone who cares, for being awesome.](https://www.youtube.com/watch?v=daBrCsDOOtk)
+
 ## DISCLAIMER:
 
 - I am not responsible for any damages that may or may not occur to your GPU or any hardware otherwise arising from your having chosen to do the steps outlined in this GitHub repository, as this is just merely for the sake of experimentation.
@@ -12,17 +18,6 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
 
 - As of 12.4 the graphical issues that were introduced by Apple (or whomever for that matter have been resolved it seems, negating the absolute NEED for this, although it can still be ran.
 - I am not suggesting that anyone do this, just know that it's still possible to continue to do so.
-- One can technically omit everything after the 
-
-``<key>@3,name</key>``
-``<string>ATY,Adder</string>``
-    and it still work, but ymmv!
-
-## Acknowledgements
-
- - [Feartech, for the original post found on TMX86.](https://www.tonymacx86.com/members/feartech.877703/)
- - [aldaro, aka aldaro#0355 on Discord, for having informed me about this.]()
- - [Everyone who cares, for being awesome.](https://www.youtube.com/watch?v=daBrCsDOOtk)
 
 ## Usage/Examples
 
@@ -130,7 +125,10 @@ I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can c
         <dict/>
     </dict>
 ```
+- One can technically omit everything in the code above that's below the two lines stated here and it still work, but ymmv:
 
+``<key>@3,name</key>``
+``<string>ATY,Adder</string>``
 
 ## Documentation
 
