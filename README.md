@@ -1,7 +1,17 @@
 
 # Spoofing the AMD Radeon RX 5700 XT to the AMD Radeon Pro W5700X via DeviceProperties
 
-This Repository contains the information necessary to spoof the AMD Radeon RX 5700 XT Navi 10 GPU to the AMD Radeon Pro W5700X GPU via adding in some XML property list formatted keys and strings in efforts of mitigating unwanted behaviors and performance degradation in macOS.
+This Repository contains the information necessary to spoof the  
+  
+`AMD Radeon RX 5700 XT Navi 10 GPU`  
+  
+![XFX AMD RX 5700 XT Triple Dissipation GPU Screenshot](https://i.ibb.co/TWT00yC/XFXRX5700-XT-TD.png)
+  
+to the `AMD Radeon Pro W5700X GPU`  
+  
+![AMD Radeon Pro W5700X GPU Screenshot](https://i.ibb.co/5R5d9V8/690066-radeon-pro-w5700-graphics-card-hotspot-1260w-0.png)
+  
+via adding in some XML property list formatted keys and strings to our OpenCore config.plist file in efforts of mitigating unwanted behaviors and performance degradation introduced by Apple in their 12.3 update of macOS.
 I have tested this on an XFX AMD Radeon RX 5700 XT Triple Dissipation, and can confirm that it works in both macOS Big Sur 11.6.5, and in macOS Monterey 12.3.
 
 ## Acknowledgements
